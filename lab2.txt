@@ -1,0 +1,40 @@
+********* create first project ******8
+
+# main.tf
+
+provider "local" {
+ version = "~>1.4"
+
+}
+resource "local_file" "hii" {
+content = "hello world"
+filename= "hello.txt"
+}
+
+terraform init
+terraform plan
+terraform apply
+
+
+**********core terraform concepts******8
+
+git clone https://github.com/BINPIE/terraform-basics.git
+
+cd terraform-basics
+
+code aws-deploy #to open it in vs
+
+sudo snap install aws-cli --classic
+
+
+
+terraform init
+terraform plan
+terrraform apply
+output :
+two ips:
+13.235.68.196
+13.233.120.61
+terraform destroy
+
+
